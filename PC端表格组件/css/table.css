@@ -1,0 +1,208 @@
+/* 表格组件样式 */
+.hide{display: none !important;}
+.scroll-table-box {
+	position: relative;
+	overflow: hidden;
+}
+.scroll-table-head {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 98;
+}
+.scroll-table-body {
+	max-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.scroll-table-box .redDot{
+	font-size: 13px;
+	color: red;
+	position: absolute;
+	left: 1px;
+	top: 7px;
+}
+.scroll-table-fixed-left {
+	height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 98;
+  box-shadow: 0 0 10px -2px;
+}
+.scroll-table-fixed-left .scroll-table-fixed-left-head {
+	position: relative;
+}
+.scroll-table-fixed-left .scroll-table-fixed-left-body {
+	position: relative;
+  overflow: hidden;
+}
+.scroll-table-box .tb1{
+	width: 100%; 
+	table-layout: fixed;
+}
+.scroll-table-box .tb1 th,.scroll-table-box .tb1 td{
+	text-align: center;
+}
+.scroll-table-box .tb1 th {
+  line-height: 20px;
+	box-sizing: border-box;
+}
+.scroll-table-box .tb1 td{
+	padding: 8px 3px;
+	box-sizing: border-box;
+}
+.scroll-table-box .tb1 td .td_div{
+  line-height: 16px;
+	text-align: center;
+	white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.scroll-table-box .tb1 td .td_div .td_div_text{
+	display: inline-block;
+	font-size: 12px;
+	*display: inline;
+	*zoom: 1;
+}
+.scroll-table-box .tb1 td .td-input {
+	width: 60px;
+	color: red;
+	text-align:center;
+	text-indent: 0px;
+	border: 1px solid #A5A5A5;
+	box-sizing: border-box;
+}
+.scroll-table-box .tb1 td .td_div input{
+  display: inline-block;
+  width: 98%;
+  text-align: center;
+  font-size:12px;
+  *display: inline;
+  *zoom: 1;
+}
+.scroll-table-box .tb1 .bug-tr td{
+	border-bottom: none;
+}
+.scroll-table-box .tb1 .no-data-tr td{
+	border-bottom: none;
+}
+
+.scroll-bar-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    padding: 0 22px;
+    background-color: #d6d6d6;
+    opacity: .8;
+    box-sizing: border-box;
+    z-index: 99;
+}
+.scroll-bar-box .left-arrow{
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    background: #fff;
+}
+.scroll-bar-box .right-arrow{
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    background: #fff;
+}
+.arrow {
+    display: inline-block;
+		margin: 0;
+    font-size: 22px;
+    background: transparent;
+    *display: inline;
+    *zoom: 1;
+}
+.scroll-bar-box .left-arrow .icon-zuojiantoushixinxiao,
+.scroll-bar-box .right-arrow .icon-youjiantoushixinxiao{
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+}
+.scroll-bar {
+    position: absolute;
+    left: 22px;
+    top: 0;
+    height: 100%;
+    background-color: #848484;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.scroll-bar-box:hover {
+		opacity: .9;
+}
+.v-scroll-bar-box {
+		position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    padding: 22px 0px;
+    background-color: #d6d6d6;
+    opacity: .8;
+    box-sizing: border-box;
+    z-index: 99;
+}
+.v-scroll-bar-box .up-arrow{
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    background: #fff;
+}
+.v-scroll-bar-box .down-arrow{
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: 0;
+    background: #fff;
+}
+.v-scroll-bar-box .up-arrow .icon-shangjiantoushixinxiao,
+.v-scroll-bar-box .down-arrow .icon-xiajiantoushixinxiao{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: -6px;
+}
+.v-scroll-bar {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 100%;
+    height:50px;
+    background-color: #848484;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.v-scroll-bar-box:hover {
+		opacity: .9;
+}
+.no_border_top th,
+.no_border_top td{
+		border-bottom: none;
+}
